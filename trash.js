@@ -1,17 +1,11 @@
-var bins = {
-  waste: 0,
-  recycling: 0,
-  compost: 0
-}
-
 const smartGarbage = function (trash, bins) {
-  let bin = new bins()
+  let bin = {waste: bins.waste, recycling: bins.recycling, compost: bins.compost}
   if (trash == "waste") {
-    bins.waste++;
+    waste = bins.waste + 1;
   } else if (trash == "recycling") {
-    bins.recycling++;
+    recycling = bins.recycling + 1;
   } else {
-    bins.compost++;
+    compost = bins.compost + 1;
   }
   return bin;
 }
