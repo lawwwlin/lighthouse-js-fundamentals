@@ -13,5 +13,7 @@ var bins = {
   recycling: 0,
   compost: 0,
 }
-
-console.log(smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 }));
+smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 })
+console.log(bins.waste);
+console.log(bins.recycling);
+console.log(bins.compost);
