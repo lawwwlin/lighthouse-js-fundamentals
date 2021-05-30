@@ -2,7 +2,7 @@ const judgeVegetable = function (vegetables, metric) {
   let vegie = { submitter: "", redness: 0, plumpness: 0 }
   if (metric == "redness") {
     let r = 0
-    for (veg in vegetables) {
+    for (let veg in vegetables) {
       if (vegetables[veg].redness > r) {
         r = vegetables[veg].redness;
         vegie.submitter = vegetables[veg].submitter;
@@ -12,7 +12,7 @@ const judgeVegetable = function (vegetables, metric) {
     }
   } else if (metric == "plumpness") {
     let p = 0
-    for (veg in vegetables) {
+    for (let veg in vegetables) {
       if (vegetables[veg].plumpness > p) {
         p = vegetables[veg].plumpness;
         vegie.submitter = vegetables[veg].submitter;
