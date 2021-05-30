@@ -1,11 +1,11 @@
 const judgeVegetable = function (vegetables, metric) {
-  let vegie = { submitter: "", m: 0 }
-  let met = 0
+  let vegie = { submitter: "", metric: 0 }
+  let m = 0
   for (let veg in vegetables) {
-    if (vegetables[veg].metric > met) {
-      met = vegetables[veg].metric;
+    if (vegetables[veg].metric > m) {
+      m = vegetables[veg].metric;
       vegie.submitter = vegetables[veg].submitter;
-      vegie.m = vegetables[veg].metric;
+      vegie.metric = vegetables[veg].metric;
     }
   }
   return vegie.submitter;
