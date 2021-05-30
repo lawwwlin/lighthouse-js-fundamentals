@@ -3,6 +3,7 @@ const range = function (start, end, step) {
   if (start === undefined || end === undefined || step === undefined) {
     if (start > end) {
       if (step <= 0) {
+        array = [];
       }
     }
   } else {
