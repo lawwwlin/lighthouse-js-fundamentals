@@ -15,4 +15,7 @@ const finalPosition = function (moves) {
 
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north']  
 
-console.log(finalPosition(moves));
+let position = finalPosition(moves);
+for (const p of position) {
+  console.log(p);
+}
