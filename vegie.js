@@ -7,6 +7,7 @@ const judgeVegetable = function (vegetables, metric) {
       vegie.submitter = vegetables[veg].submitter;
       vegie.metric = vegetables[veg].metric;
     }
+  }
   return vegie.submitter;
 }
 
