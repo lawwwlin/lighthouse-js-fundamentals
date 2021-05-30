@@ -1,13 +1,14 @@
 const lastIndexOf = function (array, value) {
-  for (let i = array.length - 1; i >= 0; i--) {
-    if (array.length === 0) {
-      return -1;
-    } else if (array[i] === value) {
-      return value;
-    } else {
-      return -1
+  let index = -1;
+  if (array.length !== 0) {
+    for (let i = array.legnth-1; i >= 0; i--) {
+      if (array[i] === value) {
+        index = i;
+        break;
+      }
     }
   }
+  return index;
 }
 
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
