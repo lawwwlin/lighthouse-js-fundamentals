@@ -21,6 +21,7 @@ const judgeVegetable = function (vegetables, metric) {
       }
     }
   }
+  return vegie.submitter;
 }
 
 const vegetables = [
