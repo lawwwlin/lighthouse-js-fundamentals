@@ -1,6 +1,7 @@
 const lastIndexOf = function (array, value) {
   let index = -1;
   if (array.length !== 0) {
+    console.log("Check");
     for (let i = array.legnth-1; i >= 0; i--) {
       console.log(index);
       if (array[i] == value) {
