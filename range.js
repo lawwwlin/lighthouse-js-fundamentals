@@ -1,5 +1,5 @@
 const range = function (start, end, step) {
-  let array = [];
+  let array = new Array();
   if (isNaN(start) || isNaN(end) || isNaN(step) || start > end || step <= 0) {
     return array;
   } else {
