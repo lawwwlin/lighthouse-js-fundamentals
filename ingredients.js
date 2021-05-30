@@ -4,6 +4,7 @@ const ingredients = ["eggs", "milk", "flour", "sugar", "baking soda", "baking po
 let counter = 0;
 while (counter <= ingredients.length) {
   console.log(ingredients[counter]);
+  counter++;
 }
 // Write a for loop that prints out the contents of ingredients:
 
