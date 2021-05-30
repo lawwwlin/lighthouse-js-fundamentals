@@ -3,7 +3,7 @@ const range = function (start, end, step) {
   if (start === undefined || end === undefined || step === undefined) {
     if (start > end) {
       if (step <= 0) {
-        return array;
+        break;
       }
     }
   } else {
@@ -11,6 +11,7 @@ const range = function (start, end, step) {
       array.push(i);
     }
   }
+  return array;
 }
 
 console.log(range(0, 10, 2));
