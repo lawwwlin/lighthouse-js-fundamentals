@@ -1,5 +1,9 @@
 const howManyHundreds = function (num) {
-  const ans = ((num % 100) + 100) % 100;
+  let ans = 0;
+  while (num > 100) {
+    num %= 100;
+    ans++;
+  }
   return ans;
 }
 
