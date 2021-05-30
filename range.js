@@ -3,7 +3,7 @@ const range = function (start, end, step) {
   if (isNaN(start) || isNaN(end) || isNaN(step) || start > end || step <= 0) {
     array = [];
   } else {
-    for (let i = start; i <= end; i = i+step) {
+    for (let i = start; i <= end; i = i + step) {
       array.push(i);
     }
   }
