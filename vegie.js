@@ -3,6 +3,7 @@ const judgeVegetable = function (vegetables, metric) {
   let m = 0
   for (let veg in vegetables) {
     console.log("check cnadidate " + veg);
+    console.log(vegetables[veg].submitter);
     console.log(vegetables[veg].metric);
     if (vegetables[veg].metric > m) {
       m = vegetables[veg].metric;
