@@ -1,6 +1,6 @@
 const howManyHundreds = function (num) {
   let ans = 0;
-  while (num > 100) {
+  while (num >= 100) {
     num = num - 100;
     ans++;
   }
