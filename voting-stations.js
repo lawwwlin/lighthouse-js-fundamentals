@@ -3,7 +3,7 @@ const chooseStations = function (stations) {
   for (const station of stations) {
     const capacity = station[1];
     const venue = station[2];
-    if ((capacity >= 20) && (venue == "school" || venue == "community centre")) {
+    if ((capacity >= 20) && (venue === "school" || venue === "community centre")) {
       goodStations.push(station[0]);
     }
   }
