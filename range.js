@@ -1,6 +1,7 @@
 const range = function (start, end, step) {
   let array = [];
-  if (start > end || step <= 0) {
+  if (isNaN(start) || isNaN(end) || isNaN(step) || start > end || step <= 0) {
+    return array;
   } else {
     for (let i = start; i <= end; i + step) {
       array.push(i);
