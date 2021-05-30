@@ -2,7 +2,7 @@ const lastIndexOf = function (array, value) {
   let index = -1;
   if (array.length !== 0) {
     for (let i = array.legnth-1; i >= 0; i--) {
-      if (array[i] === value) {
+      if (array[i] == value) {
         index = i;
         break;
       }
