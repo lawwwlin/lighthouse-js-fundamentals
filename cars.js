@@ -1,6 +1,7 @@
 const carPassing = function (cars, speed) {
   let car = { time: Date.now, s: speed }
   cars.push(car);
+  return cars;
 }
 
 const cars = [
