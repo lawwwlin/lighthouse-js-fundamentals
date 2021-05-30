@@ -4,6 +4,7 @@ const lastIndexOf = function (array, value) {
     for (let i = array.legnth-1; i >= 0; i--) {
       if (array[i] == value) {
         index = i;
+        console.log(index);
         break;
       }
     }
