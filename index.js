@@ -1,11 +1,9 @@
 const lastIndexOf = function (array, value) {
   let index = -1;
   if (array.length !== 0) {
-    for (let i = array.legnth-1; i >= 0; i-=1) {
-      console.log(index);
+    for (let i = array.length - 1; i >= 0; i-=1) {
       if (array[i] == value) {
         index = i;
-        console.log(index);
         break;
       }
     }
