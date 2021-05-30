@@ -1,5 +1,5 @@
 const calculateRectangleArea =  function (length, width) {
-  if (legnth < 0 || width < 0) {
+  if (length < 0 || width < 0) {
     return undefined;
   } else {
     return length * width;
