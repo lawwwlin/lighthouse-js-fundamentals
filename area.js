@@ -18,7 +18,7 @@ const calculateCircleArea =  function (radius) {
   if (radius < 0) {
     return undefined;
   } else {
-    return MAth.pow(Math.PI * radius, 2);
+    return Math.pow(Math.PI * radius, 2);
   }
 }
 
