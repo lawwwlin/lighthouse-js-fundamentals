@@ -4,7 +4,7 @@ const range = function (start, end, step) {
   if (start <= 0) {
     array = [];
   } else {
-    for (let i = start; i <= end; step) {
+    for (let i = start; i <= end; i = i+step) {
       array.push(i);
     }
   }
