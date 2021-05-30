@@ -11,6 +11,7 @@ const finalPosition = function (moves) {
       position[0]++;
     }
   }
+  return position;
 } 
 
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north']  
