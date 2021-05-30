@@ -10,7 +10,7 @@ const calculateTriangleArea =  function (base, height) {
   if (base < 0 || height < 0) {
     return undefined;
   } else {
-    return base * height / 2;
+    return (base * height) / 2;
   }
 }
 
