@@ -1,10 +1,10 @@
 const smartGarbage = function (trash, bins) {
   if (trash == "waste") {
-    waste++;
+    bins.waste++;
   } else if (trash == "recycling") {
-    recycling++;
+    bins.recycling++;
   } else {
-    compost++;
+    bins.compost++;
   }
 }
 
