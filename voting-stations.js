@@ -1,6 +1,6 @@
 const chooseStations = function (stations) {
+  let goodStations = [];
   for (const station of stations) {
-    let goodStations = [];
     const capacity = station[1];
     const venue = station[2];
     if ((capacity >= 20) && (venue == "school" || venue == "community centre")) {
