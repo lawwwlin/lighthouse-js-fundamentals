@@ -1,10 +1,12 @@
 const concat = function (arr1, arr2) {
+  let newArr = [];
   for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++) {
-      arr1.push(arr2[j]);
-    }
+    newArr.push(arr1[i]);
   }
-  return arr1;
+  for (let j = 0; j < arr2.length; j++) {
+    newArr.push(arr2[j]);
+  }
+  return newArr;
 }
 
 console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
