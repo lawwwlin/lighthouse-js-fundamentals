@@ -16,4 +16,7 @@ const stations = [
   ['Moose Mountain Community Centre', 45, 'community centre']
 ];
 
-chooseStations(stations);
+let s = chooseStations(stations);
+for (const station of s) {
+  console.log(station);
+}
