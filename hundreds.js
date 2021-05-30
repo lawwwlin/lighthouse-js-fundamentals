@@ -1,5 +1,5 @@
 const howManyHundreds = function (num) {
-  const ans = num % 100;
+  const ans = ((num % 100) + 100) % 100;
   return ans;
 }
 
